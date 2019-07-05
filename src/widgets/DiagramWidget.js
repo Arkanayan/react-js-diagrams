@@ -107,7 +107,7 @@ export class DiagramWidget extends React.Component {
         }
 
         // Delete all selected
-        if ([8, 46].indexOf(event.keyCode) !== -1 && selectedItems.length) {
+        if ([8, 46].indexOf(event.keyCode) !== -1 && selectedItems.length && this.getActions().deleteItems) {
           this.deleteItems(selectedItems);
         }
 
